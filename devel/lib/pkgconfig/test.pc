@@ -1,0 +1,8 @@
+prefix=/home/zheng/pu_ws/devel
+
+Name: test
+Description: Description of test
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/zheng/pu_ws/devel/lib 
+Requires: 

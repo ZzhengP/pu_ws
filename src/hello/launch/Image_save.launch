@@ -1,0 +1,7 @@
+<launch>
+<arg name1="kinect_snapshot.pcd" />
+<arg name2="kinect_snapshot_downsampled.pcd" />
+
+<node name="plc_writetofile" pkg="hello" >
+
+</launch>

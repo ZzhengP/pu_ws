@@ -1,0 +1,8 @@
+prefix=/home/zheng/pu_ws/install
+
+Name: hello
+Description: Description of hello
+Version: 0.1.0
+Cflags: -I/home/zheng/pu_ws/install/include
+Libs: -L/home/zheng/pu_ws/install/lib -lhello
+Requires: roscpp
