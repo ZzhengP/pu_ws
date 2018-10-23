@@ -71,7 +71,7 @@ int main(int argc, char **argv)
 
 
    ROS_INFO("got snapshot; savint to file kinect_snapshot.pcd");
-   pcl::io::savePCDFile("kinect_snapshot.pcd", *pclKinect_clr_ptr, true);
+   pcl::io::savePCDFile("Reference_frame.pcd", *pclKinect_clr_ptr, true);
 
 
 

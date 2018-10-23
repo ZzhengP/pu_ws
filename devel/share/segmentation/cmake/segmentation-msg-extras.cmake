@@ -1,0 +1,2 @@
+set(segmentation_MESSAGE_FILES "/home/zheng/pu_ws/src/segmentation/msg/box_data.msg;/home/zheng/pu_ws/src/segmentation/msg/processed_box_data.msg;/home/zheng/pu_ws/src/segmentation/msg/box_3D_data.msg;/home/zheng/pu_ws/src/segmentation/msg/processed_box_3D_data.msg;/home/zheng/pu_ws/src/segmentation/msg/cylinder_data.msg;/home/zheng/pu_ws/src/segmentation/msg/processed_cylinder_data.msg;/home/zheng/pu_ws/src/segmentation/msg/sphere_data.msg;/home/zheng/pu_ws/src/segmentation/msg/processed_sphere_data.msg")
+set(segmentation_SERVICE_FILES "")

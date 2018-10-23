@@ -15,8 +15,7 @@
 #include <sensor_msgs/PointCloud2.h>
 #include "std_msgs/String.h"
 #include "std_msgs/Float64MultiArray.h"
-
-
+#include "sensor_msgs/PointCloud2.h"
 // // // Cette fonction a pour le but de réduire le nombre de point cloude puis publié ces nouveaux donnés dans un autre topic
 
 bool got_kinect_image = false ;
@@ -55,6 +54,7 @@ void imagecallback(const sensor_msgs::PointCloud2ConstPtr& cloud){
    A.resize(output->width*output->height,3);
    A.setZero(output->width*output->height,3);
    std_msgs::Float64MultiArray Atest;
+
    Atest.data.resize(output->width*output->height);
    for (size_t i=0; i < output->points.size();++i)
       {
@@ -84,5 +84,5 @@ main (int argc, char** argv)
 
 
 
-
+// back ground soustraction
 }

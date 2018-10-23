@@ -79,17 +79,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -122,6 +111,17 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -164,6 +164,51 @@ preinstall/fast:
 depend:
 	cd /home/zheng/pu_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+hello/CMakeFiles/background_substraction.dir/rule:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/background_substraction.dir/rule
+.PHONY : hello/CMakeFiles/background_substraction.dir/rule
+
+# Convenience name for target.
+background_substraction: hello/CMakeFiles/background_substraction.dir/rule
+
+.PHONY : background_substraction
+
+# fast build rule for target.
+background_substraction/fast:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/background_substraction.dir/build.make hello/CMakeFiles/background_substraction.dir/build
+.PHONY : background_substraction/fast
+
+# Convenience name for target.
+hello/CMakeFiles/pcl_cylinder_seg.dir/rule:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/pcl_cylinder_seg.dir/rule
+.PHONY : hello/CMakeFiles/pcl_cylinder_seg.dir/rule
+
+# Convenience name for target.
+pcl_cylinder_seg: hello/CMakeFiles/pcl_cylinder_seg.dir/rule
+
+.PHONY : pcl_cylinder_seg
+
+# fast build rule for target.
+pcl_cylinder_seg/fast:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/build
+.PHONY : pcl_cylinder_seg/fast
+
+# Convenience name for target.
+hello/CMakeFiles/planar_segmentation.dir/rule:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/planar_segmentation.dir/rule
+.PHONY : hello/CMakeFiles/planar_segmentation.dir/rule
+
+# Convenience name for target.
+planar_segmentation: hello/CMakeFiles/planar_segmentation.dir/rule
+
+.PHONY : planar_segmentation
+
+# fast build rule for target.
+planar_segmentation/fast:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/build
+.PHONY : planar_segmentation/fast
 
 # Convenience name for target.
 hello/CMakeFiles/pu_test.dir/rule:
@@ -419,6 +464,21 @@ sensor_msgs_generate_messages_eus: hello/CMakeFiles/sensor_msgs_generate_message
 sensor_msgs_generate_messages_eus/fast:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make hello/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+hello/CMakeFiles/spatial_detection.dir/rule:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/spatial_detection.dir/rule
+.PHONY : hello/CMakeFiles/spatial_detection.dir/rule
+
+# Convenience name for target.
+spatial_detection: hello/CMakeFiles/spatial_detection.dir/rule
+
+.PHONY : spatial_detection
+
+# fast build rule for target.
+spatial_detection/fast:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/spatial_detection.dir/build.make hello/CMakeFiles/spatial_detection.dir/build
+.PHONY : spatial_detection/fast
 
 # Convenience name for target.
 hello/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
@@ -684,6 +744,60 @@ src/image_to_txt.cpp.s:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/image_to_txt.dir/build.make hello/CMakeFiles/image_to_txt.dir/src/image_to_txt.cpp.s
 .PHONY : src/image_to_txt.cpp.s
 
+src/pcl_background_substraction.o: src/pcl_background_substraction.cpp.o
+
+.PHONY : src/pcl_background_substraction.o
+
+# target to build an object file
+src/pcl_background_substraction.cpp.o:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/background_substraction.dir/build.make hello/CMakeFiles/background_substraction.dir/src/pcl_background_substraction.cpp.o
+.PHONY : src/pcl_background_substraction.cpp.o
+
+src/pcl_background_substraction.i: src/pcl_background_substraction.cpp.i
+
+.PHONY : src/pcl_background_substraction.i
+
+# target to preprocess a source file
+src/pcl_background_substraction.cpp.i:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/background_substraction.dir/build.make hello/CMakeFiles/background_substraction.dir/src/pcl_background_substraction.cpp.i
+.PHONY : src/pcl_background_substraction.cpp.i
+
+src/pcl_background_substraction.s: src/pcl_background_substraction.cpp.s
+
+.PHONY : src/pcl_background_substraction.s
+
+# target to generate assembly for a file
+src/pcl_background_substraction.cpp.s:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/background_substraction.dir/build.make hello/CMakeFiles/background_substraction.dir/src/pcl_background_substraction.cpp.s
+.PHONY : src/pcl_background_substraction.cpp.s
+
+src/pcl_cylinder_seg.o: src/pcl_cylinder_seg.cpp.o
+
+.PHONY : src/pcl_cylinder_seg.o
+
+# target to build an object file
+src/pcl_cylinder_seg.cpp.o:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/src/pcl_cylinder_seg.cpp.o
+.PHONY : src/pcl_cylinder_seg.cpp.o
+
+src/pcl_cylinder_seg.i: src/pcl_cylinder_seg.cpp.i
+
+.PHONY : src/pcl_cylinder_seg.i
+
+# target to preprocess a source file
+src/pcl_cylinder_seg.cpp.i:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/src/pcl_cylinder_seg.cpp.i
+.PHONY : src/pcl_cylinder_seg.cpp.i
+
+src/pcl_cylinder_seg.s: src/pcl_cylinder_seg.cpp.s
+
+.PHONY : src/pcl_cylinder_seg.s
+
+# target to generate assembly for a file
+src/pcl_cylinder_seg.cpp.s:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/src/pcl_cylinder_seg.cpp.s
+.PHONY : src/pcl_cylinder_seg.cpp.s
+
 src/pcl_view.o: src/pcl_view.cpp.o
 
 .PHONY : src/pcl_view.o
@@ -710,6 +824,33 @@ src/pcl_view.s: src/pcl_view.cpp.s
 src/pcl_view.cpp.s:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_view.dir/build.make hello/CMakeFiles/pcl_view.dir/src/pcl_view.cpp.s
 .PHONY : src/pcl_view.cpp.s
+
+src/planar_segmentation.o: src/planar_segmentation.cpp.o
+
+.PHONY : src/planar_segmentation.o
+
+# target to build an object file
+src/planar_segmentation.cpp.o:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/src/planar_segmentation.cpp.o
+.PHONY : src/planar_segmentation.cpp.o
+
+src/planar_segmentation.i: src/planar_segmentation.cpp.i
+
+.PHONY : src/planar_segmentation.i
+
+# target to preprocess a source file
+src/planar_segmentation.cpp.i:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/src/planar_segmentation.cpp.i
+.PHONY : src/planar_segmentation.cpp.i
+
+src/planar_segmentation.s: src/planar_segmentation.cpp.s
+
+.PHONY : src/planar_segmentation.s
+
+# target to generate assembly for a file
+src/planar_segmentation.cpp.s:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/src/planar_segmentation.cpp.s
+.PHONY : src/planar_segmentation.cpp.s
 
 src/plc_writetofile.o: src/plc_writetofile.cpp.o
 
@@ -765,6 +906,33 @@ src/pu_test.cpp.s:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pu_test.dir/build.make hello/CMakeFiles/pu_test.dir/src/pu_test.cpp.s
 .PHONY : src/pu_test.cpp.s
 
+src/spatial_detection.o: src/spatial_detection.cpp.o
+
+.PHONY : src/spatial_detection.o
+
+# target to build an object file
+src/spatial_detection.cpp.o:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/spatial_detection.dir/build.make hello/CMakeFiles/spatial_detection.dir/src/spatial_detection.cpp.o
+.PHONY : src/spatial_detection.cpp.o
+
+src/spatial_detection.i: src/spatial_detection.cpp.i
+
+.PHONY : src/spatial_detection.i
+
+# target to preprocess a source file
+src/spatial_detection.cpp.i:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/spatial_detection.dir/build.make hello/CMakeFiles/spatial_detection.dir/src/spatial_detection.cpp.i
+.PHONY : src/spatial_detection.cpp.i
+
+src/spatial_detection.s: src/spatial_detection.cpp.s
+
+.PHONY : src/spatial_detection.s
+
+# target to generate assembly for a file
+src/spatial_detection.cpp.s:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/spatial_detection.dir/build.make hello/CMakeFiles/spatial_detection.dir/src/spatial_detection.cpp.s
+.PHONY : src/spatial_detection.cpp.s
+
 src/voxel_gridfilter.o: src/voxel_gridfilter.cpp.o
 
 .PHONY : src/voxel_gridfilter.o
@@ -800,10 +968,13 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... background_substraction"
+	@echo "... edit_cache"
+	@echo "... pcl_cylinder_seg"
+	@echo "... planar_segmentation"
 	@echo "... pu_test"
 	@echo "... voxel_filter"
 	@echo "... plc_writetofile"
@@ -822,6 +993,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... spatial_detection"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... pcl_view"
@@ -842,15 +1014,27 @@ help:
 	@echo "... src/image_to_txt.o"
 	@echo "... src/image_to_txt.i"
 	@echo "... src/image_to_txt.s"
+	@echo "... src/pcl_background_substraction.o"
+	@echo "... src/pcl_background_substraction.i"
+	@echo "... src/pcl_background_substraction.s"
+	@echo "... src/pcl_cylinder_seg.o"
+	@echo "... src/pcl_cylinder_seg.i"
+	@echo "... src/pcl_cylinder_seg.s"
 	@echo "... src/pcl_view.o"
 	@echo "... src/pcl_view.i"
 	@echo "... src/pcl_view.s"
+	@echo "... src/planar_segmentation.o"
+	@echo "... src/planar_segmentation.i"
+	@echo "... src/planar_segmentation.s"
 	@echo "... src/plc_writetofile.o"
 	@echo "... src/plc_writetofile.i"
 	@echo "... src/plc_writetofile.s"
 	@echo "... src/pu_test.o"
 	@echo "... src/pu_test.i"
 	@echo "... src/pu_test.s"
+	@echo "... src/spatial_detection.o"
+	@echo "... src/spatial_detection.i"
+	@echo "... src/spatial_detection.s"
 	@echo "... src/voxel_gridfilter.o"
 	@echo "... src/voxel_gridfilter.i"
 	@echo "... src/voxel_gridfilter.s"

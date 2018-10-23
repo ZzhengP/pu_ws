@@ -41,6 +41,8 @@ std_msgs/String.h
 /home/zheng/pu_ws/src/hello/src/std_msgs/String.h
 std_msgs/Float64MultiArray.h
 /home/zheng/pu_ws/src/hello/src/std_msgs/Float64MultiArray.h
+sensor_msgs/PointCloud2.h
+/home/zheng/pu_ws/src/hello/src/sensor_msgs/PointCloud2.h
 
 /opt/ros/kinetic/include/eigen_conversions/eigen_msg.h
 std_msgs/Float64MultiArray.h
