@@ -34,13 +34,17 @@ include_directories(
 include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
- add_executable(Image_receive src/Image_receive.cpp)
+add_executable(Image_receive src/Image_receive.cpp)
 
 add_executable(plc_writetofile   src/plc_writetofile.cpp)
 add_executable(image_to_txt src/image_to_txt.cpp)
 add_executable(pcl_view src/pcl_view.cpp)
 add_executable(voxel_filter src/voxel_gridfilter.cpp)
 add_executable(pu_test src/pu_test.cpp)
+add_executable(planar_segmentation src/planar_segmentation.cpp)
+add_executable(pcl_cylinder_seg src/pcl_cylinder_seg.cpp)
+add_executable(background_substraction src/pcl_background_substraction.cpp)
+add_executable(spatial_detection src/spatial_detection.cpp)
 
 target_link_libraries(pu_test ${catkin_LIBRARIES})
 target_link_libraries(voxel_filter ${catkin_LIBRARIES} ${PCL_LIBRARIES})
@@ -49,7 +53,10 @@ target_link_libraries(image_to_txt    ${PCL_LIBRARIES})
 target_link_libraries(plc_writetofile ${catkin_LIBRARIES}
    ${PCL_LIBRARIES}
    )
-
+target_link_libraries(planar_segmentation ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+target_link_libraries(spatial_detection ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+target_link_libraries(pcl_cylinder_seg ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+target_link_libraries(background_substraction ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 target_link_libraries(Image_receive
   ${catkin_LIBRARIES} ${OpenCV_LIBS}
   ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES}

@@ -1,0 +1,23 @@
+
+(cl:in-package :asdf)
+
+(defsystem "segmentation-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils )
+  :components ((:file "_package")
+    (:file "box_3D_data" :depends-on ("_package_box_3D_data"))
+    (:file "_package_box_3D_data" :depends-on ("_package"))
+    (:file "box_data" :depends-on ("_package_box_data"))
+    (:file "_package_box_data" :depends-on ("_package"))
+    (:file "cylinder_data" :depends-on ("_package_cylinder_data"))
+    (:file "_package_cylinder_data" :depends-on ("_package"))
+    (:file "processed_box_3D_data" :depends-on ("_package_processed_box_3D_data"))
+    (:file "_package_processed_box_3D_data" :depends-on ("_package"))
+    (:file "processed_box_data" :depends-on ("_package_processed_box_data"))
+    (:file "_package_processed_box_data" :depends-on ("_package"))
+    (:file "processed_cylinder_data" :depends-on ("_package_processed_cylinder_data"))
+    (:file "_package_processed_cylinder_data" :depends-on ("_package"))
+    (:file "processed_sphere_data" :depends-on ("_package_processed_sphere_data"))
+    (:file "_package_processed_sphere_data" :depends-on ("_package"))
+    (:file "sphere_data" :depends-on ("_package_sphere_data"))
+    (:file "_package_sphere_data" :depends-on ("_package"))
+  ))
