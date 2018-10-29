@@ -21,6 +21,7 @@
 #include <pcl_conversions/pcl_conversions.h>
 #include <pcl_ros/point_cloud.h>
 
+#include <pcl/filters/voxel_grid.h>
 
 typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
 using namespace std;
@@ -66,14 +67,22 @@ void callback(const sensor_msgs::PointCloud2ConstPtr& cloud_ros){
 
    std::cout<<"Output from getPointIndicesFromNewVoxels" << std::endl;
    pcl::PointCloud<pcl::PointXYZ>::Ptr Different_point (new pcl::PointCloud<pcl::PointXYZ>);
+   pcl::PointCloud<pcl::PointXYZ>::Ptr output (new pcl::PointCloud<pcl::PointXYZ>);
 
    for(size_t i=0; i < newPointIdxVector.size();i++)
       {
       Different_point->push_back(cloud->points[newPointIdxVector[i]]);
       }
 
-   std::cout <<"Point extrait " << Different_point->size() <<"\n";
    Different_point->header.frame_id = "camera_depth_optical_frame";
+   pcl::VoxelGrid<pcl::PointXYZ> sor;
+
+   sor.setInputCloud (Different_point);
+   sor.setLeafSize (0.01f, 0.01f, 0.01f);
+   sor.filter (*output);
+   std::cout <<"Point extrait avant filtre " << Different_point->size() <<"\n";
+   std::cout <<"Point extrait après filtre " << output->size() <<"\n";
+
    test_pub.publish(Different_point);
    octree.deleteCurrentBuffer();
    octree.deletePreviousBuffer();
@@ -91,8 +100,8 @@ int main (int argc, char** argv)
 
 
 
-   test_pub = r.advertise<PointCloud>("chatter",1);
-   ros::Subscriber sub = nh.subscribe("camera/depth/points", 1, callback);
+   test_pub = r.advertise<PointCloud>("chatter",10);
+   ros::Subscriber sub = nh.subscribe("camera/depth/points", 10, callback);
    ros::spin();
    return(0);
 

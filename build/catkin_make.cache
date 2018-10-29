@@ -1,2 +1,2 @@
-hello
--DCATKIN_DEVEL_PREFIX=/home/zheng/pu_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zheng/pu_ws/install -G Unix Makefiles
+hello:surface_perception
+-G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/zheng/pu_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zheng/pu_ws/install

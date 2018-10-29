@@ -45,7 +45,6 @@ add_executable(planar_segmentation src/planar_segmentation.cpp)
 add_executable(pcl_cylinder_seg src/pcl_cylinder_seg.cpp)
 add_executable(background_substraction src/pcl_background_substraction.cpp)
 add_executable(spatial_detection src/spatial_detection.cpp)
-
 target_link_libraries(pu_test ${catkin_LIBRARIES})
 target_link_libraries(voxel_filter ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 target_link_libraries(pcl_view    ${PCL_LIBRARIES})
