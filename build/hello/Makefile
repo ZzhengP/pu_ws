@@ -79,6 +79,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -111,17 +122,6 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -181,36 +181,6 @@ background_substraction/fast:
 .PHONY : background_substraction/fast
 
 # Convenience name for target.
-hello/CMakeFiles/pcl_cylinder_seg.dir/rule:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/pcl_cylinder_seg.dir/rule
-.PHONY : hello/CMakeFiles/pcl_cylinder_seg.dir/rule
-
-# Convenience name for target.
-pcl_cylinder_seg: hello/CMakeFiles/pcl_cylinder_seg.dir/rule
-
-.PHONY : pcl_cylinder_seg
-
-# fast build rule for target.
-pcl_cylinder_seg/fast:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/build
-.PHONY : pcl_cylinder_seg/fast
-
-# Convenience name for target.
-hello/CMakeFiles/planar_segmentation.dir/rule:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/planar_segmentation.dir/rule
-.PHONY : hello/CMakeFiles/planar_segmentation.dir/rule
-
-# Convenience name for target.
-planar_segmentation: hello/CMakeFiles/planar_segmentation.dir/rule
-
-.PHONY : planar_segmentation
-
-# fast build rule for target.
-planar_segmentation/fast:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/build
-.PHONY : planar_segmentation/fast
-
-# Convenience name for target.
 hello/CMakeFiles/pu_test.dir/rule:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/pu_test.dir/rule
 .PHONY : hello/CMakeFiles/pu_test.dir/rule
@@ -254,21 +224,6 @@ plc_writetofile: hello/CMakeFiles/plc_writetofile.dir/rule
 plc_writetofile/fast:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/plc_writetofile.dir/build.make hello/CMakeFiles/plc_writetofile.dir/build
 .PHONY : plc_writetofile/fast
-
-# Convenience name for target.
-hello/CMakeFiles/Image_receive.dir/rule:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/Image_receive.dir/rule
-.PHONY : hello/CMakeFiles/Image_receive.dir/rule
-
-# Convenience name for target.
-Image_receive: hello/CMakeFiles/Image_receive.dir/rule
-
-.PHONY : Image_receive
-
-# fast build rule for target.
-Image_receive/fast:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/Image_receive.dir/build.make hello/CMakeFiles/Image_receive.dir/build
-.PHONY : Image_receive/fast
 
 # Convenience name for target.
 hello/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
@@ -389,6 +344,21 @@ sensor_msgs_generate_messages_cpp: hello/CMakeFiles/sensor_msgs_generate_message
 sensor_msgs_generate_messages_cpp/fast:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make hello/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+hello/CMakeFiles/euclidean_cluster.dir/rule:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/euclidean_cluster.dir/rule
+.PHONY : hello/CMakeFiles/euclidean_cluster.dir/rule
+
+# Convenience name for target.
+euclidean_cluster: hello/CMakeFiles/euclidean_cluster.dir/rule
+
+.PHONY : euclidean_cluster
+
+# fast build rule for target.
+euclidean_cluster/fast:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/euclidean_cluster.dir/build.make hello/CMakeFiles/euclidean_cluster.dir/build
+.PHONY : euclidean_cluster/fast
 
 # Convenience name for target.
 hello/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
@@ -690,32 +660,32 @@ roscpp_generate_messages_nodejs/fast:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make hello/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
-src/Image_receive.o: src/Image_receive.cpp.o
+src/euclidean_cluster.o: src/euclidean_cluster.cpp.o
 
-.PHONY : src/Image_receive.o
+.PHONY : src/euclidean_cluster.o
 
 # target to build an object file
-src/Image_receive.cpp.o:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/Image_receive.dir/build.make hello/CMakeFiles/Image_receive.dir/src/Image_receive.cpp.o
-.PHONY : src/Image_receive.cpp.o
+src/euclidean_cluster.cpp.o:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/euclidean_cluster.dir/build.make hello/CMakeFiles/euclidean_cluster.dir/src/euclidean_cluster.cpp.o
+.PHONY : src/euclidean_cluster.cpp.o
 
-src/Image_receive.i: src/Image_receive.cpp.i
+src/euclidean_cluster.i: src/euclidean_cluster.cpp.i
 
-.PHONY : src/Image_receive.i
+.PHONY : src/euclidean_cluster.i
 
 # target to preprocess a source file
-src/Image_receive.cpp.i:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/Image_receive.dir/build.make hello/CMakeFiles/Image_receive.dir/src/Image_receive.cpp.i
-.PHONY : src/Image_receive.cpp.i
+src/euclidean_cluster.cpp.i:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/euclidean_cluster.dir/build.make hello/CMakeFiles/euclidean_cluster.dir/src/euclidean_cluster.cpp.i
+.PHONY : src/euclidean_cluster.cpp.i
 
-src/Image_receive.s: src/Image_receive.cpp.s
+src/euclidean_cluster.s: src/euclidean_cluster.cpp.s
 
-.PHONY : src/Image_receive.s
+.PHONY : src/euclidean_cluster.s
 
 # target to generate assembly for a file
-src/Image_receive.cpp.s:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/Image_receive.dir/build.make hello/CMakeFiles/Image_receive.dir/src/Image_receive.cpp.s
-.PHONY : src/Image_receive.cpp.s
+src/euclidean_cluster.cpp.s:
+	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/euclidean_cluster.dir/build.make hello/CMakeFiles/euclidean_cluster.dir/src/euclidean_cluster.cpp.s
+.PHONY : src/euclidean_cluster.cpp.s
 
 src/image_to_txt.o: src/image_to_txt.cpp.o
 
@@ -771,33 +741,6 @@ src/pcl_background_substraction.cpp.s:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/background_substraction.dir/build.make hello/CMakeFiles/background_substraction.dir/src/pcl_background_substraction.cpp.s
 .PHONY : src/pcl_background_substraction.cpp.s
 
-src/pcl_cylinder_seg.o: src/pcl_cylinder_seg.cpp.o
-
-.PHONY : src/pcl_cylinder_seg.o
-
-# target to build an object file
-src/pcl_cylinder_seg.cpp.o:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/src/pcl_cylinder_seg.cpp.o
-.PHONY : src/pcl_cylinder_seg.cpp.o
-
-src/pcl_cylinder_seg.i: src/pcl_cylinder_seg.cpp.i
-
-.PHONY : src/pcl_cylinder_seg.i
-
-# target to preprocess a source file
-src/pcl_cylinder_seg.cpp.i:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/src/pcl_cylinder_seg.cpp.i
-.PHONY : src/pcl_cylinder_seg.cpp.i
-
-src/pcl_cylinder_seg.s: src/pcl_cylinder_seg.cpp.s
-
-.PHONY : src/pcl_cylinder_seg.s
-
-# target to generate assembly for a file
-src/pcl_cylinder_seg.cpp.s:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/src/pcl_cylinder_seg.cpp.s
-.PHONY : src/pcl_cylinder_seg.cpp.s
-
 src/pcl_view.o: src/pcl_view.cpp.o
 
 .PHONY : src/pcl_view.o
@@ -824,33 +767,6 @@ src/pcl_view.s: src/pcl_view.cpp.s
 src/pcl_view.cpp.s:
 	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/pcl_view.dir/build.make hello/CMakeFiles/pcl_view.dir/src/pcl_view.cpp.s
 .PHONY : src/pcl_view.cpp.s
-
-src/planar_segmentation.o: src/planar_segmentation.cpp.o
-
-.PHONY : src/planar_segmentation.o
-
-# target to build an object file
-src/planar_segmentation.cpp.o:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/src/planar_segmentation.cpp.o
-.PHONY : src/planar_segmentation.cpp.o
-
-src/planar_segmentation.i: src/planar_segmentation.cpp.i
-
-.PHONY : src/planar_segmentation.i
-
-# target to preprocess a source file
-src/planar_segmentation.cpp.i:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/src/planar_segmentation.cpp.i
-.PHONY : src/planar_segmentation.cpp.i
-
-src/planar_segmentation.s: src/planar_segmentation.cpp.s
-
-.PHONY : src/planar_segmentation.s
-
-# target to generate assembly for a file
-src/planar_segmentation.cpp.s:
-	cd /home/zheng/pu_ws/build && $(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/src/planar_segmentation.cpp.s
-.PHONY : src/planar_segmentation.cpp.s
 
 src/plc_writetofile.o: src/plc_writetofile.cpp.o
 
@@ -968,17 +884,14 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... background_substraction"
-	@echo "... edit_cache"
-	@echo "... pcl_cylinder_seg"
-	@echo "... planar_segmentation"
 	@echo "... pu_test"
 	@echo "... voxel_filter"
 	@echo "... plc_writetofile"
-	@echo "... Image_receive"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... image_to_txt"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -987,6 +900,7 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... euclidean_cluster"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -1008,24 +922,18 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... src/Image_receive.o"
-	@echo "... src/Image_receive.i"
-	@echo "... src/Image_receive.s"
+	@echo "... src/euclidean_cluster.o"
+	@echo "... src/euclidean_cluster.i"
+	@echo "... src/euclidean_cluster.s"
 	@echo "... src/image_to_txt.o"
 	@echo "... src/image_to_txt.i"
 	@echo "... src/image_to_txt.s"
 	@echo "... src/pcl_background_substraction.o"
 	@echo "... src/pcl_background_substraction.i"
 	@echo "... src/pcl_background_substraction.s"
-	@echo "... src/pcl_cylinder_seg.o"
-	@echo "... src/pcl_cylinder_seg.i"
-	@echo "... src/pcl_cylinder_seg.s"
 	@echo "... src/pcl_view.o"
 	@echo "... src/pcl_view.i"
 	@echo "... src/pcl_view.s"
-	@echo "... src/planar_segmentation.o"
-	@echo "... src/planar_segmentation.i"
-	@echo "... src/planar_segmentation.s"
 	@echo "... src/plc_writetofile.o"
 	@echo "... src/plc_writetofile.i"
 	@echo "... src/plc_writetofile.s"

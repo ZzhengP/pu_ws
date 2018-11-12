@@ -29,7 +29,7 @@ ros::Publisher test_pub;   // déclarer publish en global pour utiliser les donn
 
 int distance_1(0);
 int distance_2(0);
-float resolution = 0.5;
+float resolution = 0.1f;
 
 pcl::octree::OctreePointCloudChangeDetector<pcl::PointXYZ> octree (resolution);
 
@@ -83,7 +83,17 @@ void callback(const sensor_msgs::PointCloud2ConstPtr& cloud_ros){
    std::cout <<"Point extrait avant filtre " << Different_point->size() <<"\n";
    std::cout <<"Point extrait après filtre " << output->size() <<"\n";
 
+   pcl::PassThrough<pcl::PointXYZ> pass ;
+
+         // Build a passthrough filter to remove spurious NaNs
+   pass.setInputCloud (Different_point);
+   pass.setFilterFieldName ("z");
+   pass.setFilterLimits (0, 2.5);
+   pass.filter (*Different_point);
    test_pub.publish(Different_point);
+//   test_pub.publish(output);
+//   pcl::io::savePCDFile("Cylinder_frame.pcd", *Different_point, false);
+
    octree.deleteCurrentBuffer();
    octree.deletePreviousBuffer();
 }
@@ -100,8 +110,9 @@ int main (int argc, char** argv)
 
 
 
-   test_pub = r.advertise<PointCloud>("chatter",10);
-   ros::Subscriber sub = nh.subscribe("camera/depth/points", 10, callback);
+   test_pub = r.advertise<PointCloud>("chatter",1);
+   ros::Subscriber sub = nh.subscribe("camera/depth/points", 1, callback);
+
    ros::spin();
    return(0);
 

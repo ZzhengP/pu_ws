@@ -765,10 +765,10 @@ rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 
 //Value Computed by CMake
-segmentation_BINARY_DIR:STATIC=/home/zheng/pu_ws/build/segmentation
+segmentation_BINARY_DIR:STATIC=/home/zheng/pu_ws/build/Segmentation/segmentation
 
 //Value Computed by CMake
-segmentation_SOURCE_DIR:STATIC=/home/zheng/pu_ws/src/segmentation
+segmentation_SOURCE_DIR:STATIC=/home/zheng/pu_ws/src/Segmentation/segmentation
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake

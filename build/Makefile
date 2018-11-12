@@ -296,32 +296,6 @@ background_substraction/fast:
 .PHONY : background_substraction/fast
 
 #=============================================================================
-# Target rules for targets named pcl_cylinder_seg
-
-# Build rule for target.
-pcl_cylinder_seg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcl_cylinder_seg
-.PHONY : pcl_cylinder_seg
-
-# fast build rule for target.
-pcl_cylinder_seg/fast:
-	$(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/build
-.PHONY : pcl_cylinder_seg/fast
-
-#=============================================================================
-# Target rules for targets named planar_segmentation
-
-# Build rule for target.
-planar_segmentation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 planar_segmentation
-.PHONY : planar_segmentation
-
-# fast build rule for target.
-planar_segmentation/fast:
-	$(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/build
-.PHONY : planar_segmentation/fast
-
-#=============================================================================
 # Target rules for targets named pu_test
 
 # Build rule for target.
@@ -359,19 +333,6 @@ plc_writetofile: cmake_check_build_system
 plc_writetofile/fast:
 	$(MAKE) -f hello/CMakeFiles/plc_writetofile.dir/build.make hello/CMakeFiles/plc_writetofile.dir/build
 .PHONY : plc_writetofile/fast
-
-#=============================================================================
-# Target rules for targets named Image_receive
-
-# Build rule for target.
-Image_receive: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Image_receive
-.PHONY : Image_receive
-
-# fast build rule for target.
-Image_receive/fast:
-	$(MAKE) -f hello/CMakeFiles/Image_receive.dir/build.make hello/CMakeFiles/Image_receive.dir/build
-.PHONY : Image_receive/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -476,6 +437,19 @@ sensor_msgs_generate_messages_cpp: cmake_check_build_system
 sensor_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f hello/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make hello/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named euclidean_cluster
+
+# Build rule for target.
+euclidean_cluster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 euclidean_cluster
+.PHONY : euclidean_cluster
+
+# fast build rule for target.
+euclidean_cluster/fast:
+	$(MAKE) -f hello/CMakeFiles/euclidean_cluster.dir/build.make hello/CMakeFiles/euclidean_cluster.dir/build
+.PHONY : euclidean_cluster/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_lisp
@@ -1345,12 +1319,9 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... background_substraction"
-	@echo "... pcl_cylinder_seg"
-	@echo "... planar_segmentation"
 	@echo "... pu_test"
 	@echo "... voxel_filter"
 	@echo "... plc_writetofile"
-	@echo "... Image_receive"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... image_to_txt"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -1359,6 +1330,7 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... euclidean_cluster"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"

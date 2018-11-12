@@ -159,290 +159,6 @@
             <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="pcl_cylinder_seg">
-         <Option output="/home/zheng/pu_ws/devel/lib/hello/pcl_cylinder_seg" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/zheng/pu_ws/devel/lib/hello" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;hello&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add option="-DDISABLE_PCAP" />
-            <Add option="-DDISABLE_PNG" />
-            <Add option="-DvtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)" />
-            <Add option="-DvtkIOExodus_AUTOINIT=1(vtkIOParallelExodus)" />
-            <Add option="-DvtkIOGeometry_AUTOINIT=1(vtkIOMPIParallel)" />
-            <Add option="-DvtkIOImage_AUTOINIT=1(vtkIOMPIImage)" />
-            <Add option="-DvtkIOSQL_AUTOINIT=2(vtkIOMySQL,vtkIOPostgreSQL)" />
-            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL)" />
-            <Add option="-DvtkRenderingCore_AUTOINIT=4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)" />
-            <Add option="-DvtkRenderingFreeType_AUTOINIT=2(vtkRenderingFreeTypeFontConfig,vtkRenderingMatplotlib)" />
-            <Add option="-DvtkRenderingLIC_AUTOINIT=1(vtkRenderingParallelLIC)" />
-            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL)" />
-            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
-            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
-            <Add option="-DFLANN_STATIC" />
-            <Add option="-Dqh_QHpointer" />
-            <Add option="-DQT_WIDGETS_LIB" />
-            <Add option="-DQT_GUI_LIB" />
-            <Add option="-DQT_CORE_LIB" />
-            <Add directory="/home/zheng/pu_ws/src/hello/include" />
-            <Add directory="/opt/ros/kinetic/include" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
-            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/eigen3" />
-            <Add directory="/usr/include/freetype2" />
-            <Add directory="/usr/include/hdf5/openmpi" />
-            <Add directory="/usr/include/jsoncpp" />
-            <Add directory="/usr/include/libxml2" />
-            <Add directory="/usr/include/ni" />
-            <Add directory="/usr/include/openni2" />
-            <Add directory="/usr/include/pcl-1.7" />
-            <Add directory="/usr/include/python2.7" />
-            <Add directory="/usr/include/tcl" />
-            <Add directory="/usr/include/vtk-6.2" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/freetype2" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/lib/openmpi/include" />
-            <Add directory="/usr/lib/openmpi/include/openmpi" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include" />
-            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 pcl_cylinder_seg" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="pcl_cylinder_seg/fast">
-         <Option output="/home/zheng/pu_ws/devel/lib/hello/pcl_cylinder_seg" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/zheng/pu_ws/devel/lib/hello" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;hello&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add option="-DDISABLE_PCAP" />
-            <Add option="-DDISABLE_PNG" />
-            <Add option="-DvtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)" />
-            <Add option="-DvtkIOExodus_AUTOINIT=1(vtkIOParallelExodus)" />
-            <Add option="-DvtkIOGeometry_AUTOINIT=1(vtkIOMPIParallel)" />
-            <Add option="-DvtkIOImage_AUTOINIT=1(vtkIOMPIImage)" />
-            <Add option="-DvtkIOSQL_AUTOINIT=2(vtkIOMySQL,vtkIOPostgreSQL)" />
-            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL)" />
-            <Add option="-DvtkRenderingCore_AUTOINIT=4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)" />
-            <Add option="-DvtkRenderingFreeType_AUTOINIT=2(vtkRenderingFreeTypeFontConfig,vtkRenderingMatplotlib)" />
-            <Add option="-DvtkRenderingLIC_AUTOINIT=1(vtkRenderingParallelLIC)" />
-            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL)" />
-            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
-            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
-            <Add option="-DFLANN_STATIC" />
-            <Add option="-Dqh_QHpointer" />
-            <Add option="-DQT_WIDGETS_LIB" />
-            <Add option="-DQT_GUI_LIB" />
-            <Add option="-DQT_CORE_LIB" />
-            <Add directory="/home/zheng/pu_ws/src/hello/include" />
-            <Add directory="/opt/ros/kinetic/include" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
-            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/eigen3" />
-            <Add directory="/usr/include/freetype2" />
-            <Add directory="/usr/include/hdf5/openmpi" />
-            <Add directory="/usr/include/jsoncpp" />
-            <Add directory="/usr/include/libxml2" />
-            <Add directory="/usr/include/ni" />
-            <Add directory="/usr/include/openni2" />
-            <Add directory="/usr/include/pcl-1.7" />
-            <Add directory="/usr/include/python2.7" />
-            <Add directory="/usr/include/tcl" />
-            <Add directory="/usr/include/vtk-6.2" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/freetype2" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/lib/openmpi/include" />
-            <Add directory="/usr/lib/openmpi/include/openmpi" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include" />
-            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 pcl_cylinder_seg/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="planar_segmentation">
-         <Option output="/home/zheng/pu_ws/devel/lib/hello/planar_segmentation" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/zheng/pu_ws/devel/lib/hello" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;hello&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add option="-DDISABLE_PCAP" />
-            <Add option="-DDISABLE_PNG" />
-            <Add option="-DvtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)" />
-            <Add option="-DvtkIOExodus_AUTOINIT=1(vtkIOParallelExodus)" />
-            <Add option="-DvtkIOGeometry_AUTOINIT=1(vtkIOMPIParallel)" />
-            <Add option="-DvtkIOImage_AUTOINIT=1(vtkIOMPIImage)" />
-            <Add option="-DvtkIOSQL_AUTOINIT=2(vtkIOMySQL,vtkIOPostgreSQL)" />
-            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL)" />
-            <Add option="-DvtkRenderingCore_AUTOINIT=4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)" />
-            <Add option="-DvtkRenderingFreeType_AUTOINIT=2(vtkRenderingFreeTypeFontConfig,vtkRenderingMatplotlib)" />
-            <Add option="-DvtkRenderingLIC_AUTOINIT=1(vtkRenderingParallelLIC)" />
-            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL)" />
-            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
-            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
-            <Add option="-DFLANN_STATIC" />
-            <Add option="-Dqh_QHpointer" />
-            <Add option="-DQT_WIDGETS_LIB" />
-            <Add option="-DQT_GUI_LIB" />
-            <Add option="-DQT_CORE_LIB" />
-            <Add directory="/home/zheng/pu_ws/src/hello/include" />
-            <Add directory="/opt/ros/kinetic/include" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
-            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/eigen3" />
-            <Add directory="/usr/include/freetype2" />
-            <Add directory="/usr/include/hdf5/openmpi" />
-            <Add directory="/usr/include/jsoncpp" />
-            <Add directory="/usr/include/libxml2" />
-            <Add directory="/usr/include/ni" />
-            <Add directory="/usr/include/openni2" />
-            <Add directory="/usr/include/pcl-1.7" />
-            <Add directory="/usr/include/python2.7" />
-            <Add directory="/usr/include/tcl" />
-            <Add directory="/usr/include/vtk-6.2" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/freetype2" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/lib/openmpi/include" />
-            <Add directory="/usr/lib/openmpi/include/openmpi" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include" />
-            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 planar_segmentation" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="planar_segmentation/fast">
-         <Option output="/home/zheng/pu_ws/devel/lib/hello/planar_segmentation" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/zheng/pu_ws/devel/lib/hello" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;hello&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add option="-DDISABLE_PCAP" />
-            <Add option="-DDISABLE_PNG" />
-            <Add option="-DvtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)" />
-            <Add option="-DvtkIOExodus_AUTOINIT=1(vtkIOParallelExodus)" />
-            <Add option="-DvtkIOGeometry_AUTOINIT=1(vtkIOMPIParallel)" />
-            <Add option="-DvtkIOImage_AUTOINIT=1(vtkIOMPIImage)" />
-            <Add option="-DvtkIOSQL_AUTOINIT=2(vtkIOMySQL,vtkIOPostgreSQL)" />
-            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL)" />
-            <Add option="-DvtkRenderingCore_AUTOINIT=4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)" />
-            <Add option="-DvtkRenderingFreeType_AUTOINIT=2(vtkRenderingFreeTypeFontConfig,vtkRenderingMatplotlib)" />
-            <Add option="-DvtkRenderingLIC_AUTOINIT=1(vtkRenderingParallelLIC)" />
-            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL)" />
-            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
-            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
-            <Add option="-DFLANN_STATIC" />
-            <Add option="-Dqh_QHpointer" />
-            <Add option="-DQT_WIDGETS_LIB" />
-            <Add option="-DQT_GUI_LIB" />
-            <Add option="-DQT_CORE_LIB" />
-            <Add directory="/home/zheng/pu_ws/src/hello/include" />
-            <Add directory="/opt/ros/kinetic/include" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
-            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/eigen3" />
-            <Add directory="/usr/include/freetype2" />
-            <Add directory="/usr/include/hdf5/openmpi" />
-            <Add directory="/usr/include/jsoncpp" />
-            <Add directory="/usr/include/libxml2" />
-            <Add directory="/usr/include/ni" />
-            <Add directory="/usr/include/openni2" />
-            <Add directory="/usr/include/pcl-1.7" />
-            <Add directory="/usr/include/python2.7" />
-            <Add directory="/usr/include/tcl" />
-            <Add directory="/usr/include/vtk-6.2" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/freetype2" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/lib/openmpi/include" />
-            <Add directory="/usr/lib/openmpi/include/openmpi" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include" />
-            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 planar_segmentation/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       <Target title="pu_test">
          <Option output="/home/zheng/pu_ws/devel/lib/hello/pu_test" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/zheng/pu_ws/devel/lib/hello" />
@@ -853,148 +569,6 @@
             <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="Image_receive">
-         <Option output="/home/zheng/pu_ws/devel/lib/hello/Image_receive" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/zheng/pu_ws/devel/lib/hello" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;hello&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add option="-DDISABLE_PCAP" />
-            <Add option="-DDISABLE_PNG" />
-            <Add option="-DvtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)" />
-            <Add option="-DvtkIOExodus_AUTOINIT=1(vtkIOParallelExodus)" />
-            <Add option="-DvtkIOGeometry_AUTOINIT=1(vtkIOMPIParallel)" />
-            <Add option="-DvtkIOImage_AUTOINIT=1(vtkIOMPIImage)" />
-            <Add option="-DvtkIOSQL_AUTOINIT=2(vtkIOMySQL,vtkIOPostgreSQL)" />
-            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL)" />
-            <Add option="-DvtkRenderingCore_AUTOINIT=4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)" />
-            <Add option="-DvtkRenderingFreeType_AUTOINIT=2(vtkRenderingFreeTypeFontConfig,vtkRenderingMatplotlib)" />
-            <Add option="-DvtkRenderingLIC_AUTOINIT=1(vtkRenderingParallelLIC)" />
-            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL)" />
-            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
-            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
-            <Add option="-DFLANN_STATIC" />
-            <Add option="-Dqh_QHpointer" />
-            <Add option="-DQT_WIDGETS_LIB" />
-            <Add option="-DQT_GUI_LIB" />
-            <Add option="-DQT_CORE_LIB" />
-            <Add directory="/home/zheng/pu_ws/src/hello/include" />
-            <Add directory="/opt/ros/kinetic/include" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
-            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/eigen3" />
-            <Add directory="/usr/include/freetype2" />
-            <Add directory="/usr/include/hdf5/openmpi" />
-            <Add directory="/usr/include/jsoncpp" />
-            <Add directory="/usr/include/libxml2" />
-            <Add directory="/usr/include/ni" />
-            <Add directory="/usr/include/openni2" />
-            <Add directory="/usr/include/pcl-1.7" />
-            <Add directory="/usr/include/python2.7" />
-            <Add directory="/usr/include/tcl" />
-            <Add directory="/usr/include/vtk-6.2" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/freetype2" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/lib/openmpi/include" />
-            <Add directory="/usr/lib/openmpi/include/openmpi" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include" />
-            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 Image_receive" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="Image_receive/fast">
-         <Option output="/home/zheng/pu_ws/devel/lib/hello/Image_receive" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/zheng/pu_ws/devel/lib/hello" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;hello&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add option="-DDISABLE_PCAP" />
-            <Add option="-DDISABLE_PNG" />
-            <Add option="-DvtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)" />
-            <Add option="-DvtkIOExodus_AUTOINIT=1(vtkIOParallelExodus)" />
-            <Add option="-DvtkIOGeometry_AUTOINIT=1(vtkIOMPIParallel)" />
-            <Add option="-DvtkIOImage_AUTOINIT=1(vtkIOMPIImage)" />
-            <Add option="-DvtkIOSQL_AUTOINIT=2(vtkIOMySQL,vtkIOPostgreSQL)" />
-            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL)" />
-            <Add option="-DvtkRenderingCore_AUTOINIT=4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)" />
-            <Add option="-DvtkRenderingFreeType_AUTOINIT=2(vtkRenderingFreeTypeFontConfig,vtkRenderingMatplotlib)" />
-            <Add option="-DvtkRenderingLIC_AUTOINIT=1(vtkRenderingParallelLIC)" />
-            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL)" />
-            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
-            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
-            <Add option="-DFLANN_STATIC" />
-            <Add option="-Dqh_QHpointer" />
-            <Add option="-DQT_WIDGETS_LIB" />
-            <Add option="-DQT_GUI_LIB" />
-            <Add option="-DQT_CORE_LIB" />
-            <Add directory="/home/zheng/pu_ws/src/hello/include" />
-            <Add directory="/opt/ros/kinetic/include" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
-            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
-            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/eigen3" />
-            <Add directory="/usr/include/freetype2" />
-            <Add directory="/usr/include/hdf5/openmpi" />
-            <Add directory="/usr/include/jsoncpp" />
-            <Add directory="/usr/include/libxml2" />
-            <Add directory="/usr/include/ni" />
-            <Add directory="/usr/include/openni2" />
-            <Add directory="/usr/include/pcl-1.7" />
-            <Add directory="/usr/include/python2.7" />
-            <Add directory="/usr/include/tcl" />
-            <Add directory="/usr/include/vtk-6.2" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/freetype2" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
-            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/lib/openmpi/include" />
-            <Add directory="/usr/lib/openmpi/include/openmpi" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent" />
-            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include" />
-            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 Image_receive/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       <Target title="rosgraph_msgs_generate_messages_nodejs">
          <Option working_dir="/home/zheng/pu_ws/build/hello" />
          <Option type="4" />
@@ -1202,6 +776,148 @@
          <Option type="4" />
          <MakeCommands>
             <Build command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_cpp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="euclidean_cluster">
+         <Option output="/home/zheng/pu_ws/devel/lib/hello/euclidean_cluster" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/zheng/pu_ws/devel/lib/hello" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
+            <Add option="-DROS_PACKAGE_NAME=&quot;hello&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DvtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)" />
+            <Add option="-DvtkIOExodus_AUTOINIT=1(vtkIOParallelExodus)" />
+            <Add option="-DvtkIOGeometry_AUTOINIT=1(vtkIOMPIParallel)" />
+            <Add option="-DvtkIOImage_AUTOINIT=1(vtkIOMPIImage)" />
+            <Add option="-DvtkIOSQL_AUTOINIT=2(vtkIOMySQL,vtkIOPostgreSQL)" />
+            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL)" />
+            <Add option="-DvtkRenderingCore_AUTOINIT=4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)" />
+            <Add option="-DvtkRenderingFreeType_AUTOINIT=2(vtkRenderingFreeTypeFontConfig,vtkRenderingMatplotlib)" />
+            <Add option="-DvtkRenderingLIC_AUTOINIT=1(vtkRenderingParallelLIC)" />
+            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL)" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add option="-Dqh_QHpointer" />
+            <Add option="-DQT_WIDGETS_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/zheng/pu_ws/src/hello/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/hdf5/openmpi" />
+            <Add directory="/usr/include/jsoncpp" />
+            <Add directory="/usr/include/libxml2" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/pcl-1.7" />
+            <Add directory="/usr/include/python2.7" />
+            <Add directory="/usr/include/tcl" />
+            <Add directory="/usr/include/vtk-6.2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/include/x86_64-linux-gnu/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/lib/openmpi/include" />
+            <Add directory="/usr/lib/openmpi/include/openmpi" />
+            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent" />
+            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include" />
+            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 euclidean_cluster" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="euclidean_cluster/fast">
+         <Option output="/home/zheng/pu_ws/devel/lib/hello/euclidean_cluster" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/zheng/pu_ws/devel/lib/hello" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
+            <Add option="-DROS_PACKAGE_NAME=&quot;hello&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DvtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)" />
+            <Add option="-DvtkIOExodus_AUTOINIT=1(vtkIOParallelExodus)" />
+            <Add option="-DvtkIOGeometry_AUTOINIT=1(vtkIOMPIParallel)" />
+            <Add option="-DvtkIOImage_AUTOINIT=1(vtkIOMPIImage)" />
+            <Add option="-DvtkIOSQL_AUTOINIT=2(vtkIOMySQL,vtkIOPostgreSQL)" />
+            <Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL)" />
+            <Add option="-DvtkRenderingCore_AUTOINIT=4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)" />
+            <Add option="-DvtkRenderingFreeType_AUTOINIT=2(vtkRenderingFreeTypeFontConfig,vtkRenderingMatplotlib)" />
+            <Add option="-DvtkRenderingLIC_AUTOINIT=1(vtkRenderingParallelLIC)" />
+            <Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL)" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add option="-Dqh_QHpointer" />
+            <Add option="-DQT_WIDGETS_LIB" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/zheng/pu_ws/src/hello/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/hdf5/openmpi" />
+            <Add directory="/usr/include/jsoncpp" />
+            <Add directory="/usr/include/libxml2" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/pcl-1.7" />
+            <Add directory="/usr/include/python2.7" />
+            <Add directory="/usr/include/tcl" />
+            <Add directory="/usr/include/vtk-6.2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/include/x86_64-linux-gnu/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/lib/openmpi/include" />
+            <Add directory="/usr/lib/openmpi/include/openmpi" />
+            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent" />
+            <Add directory="/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include" />
+            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 euclidean_cluster/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/zheng/pu_ws/build/hello/Makefile&quot;  VERBOSE=1 clean" />
@@ -1672,8 +1388,8 @@
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="/home/zheng/pu_ws/src/hello/src/Image_receive.cpp">
-         <Option target="Image_receive"/>
+      <Unit filename="/home/zheng/pu_ws/src/hello/src/euclidean_cluster.cpp">
+         <Option target="euclidean_cluster"/>
       </Unit>
       <Unit filename="/home/zheng/pu_ws/src/hello/src/image_to_txt.cpp">
          <Option target="image_to_txt"/>
@@ -1681,14 +1397,8 @@
       <Unit filename="/home/zheng/pu_ws/src/hello/src/pcl_background_substraction.cpp">
          <Option target="background_substraction"/>
       </Unit>
-      <Unit filename="/home/zheng/pu_ws/src/hello/src/pcl_cylinder_seg.cpp">
-         <Option target="pcl_cylinder_seg"/>
-      </Unit>
       <Unit filename="/home/zheng/pu_ws/src/hello/src/pcl_view.cpp">
          <Option target="pcl_view"/>
-      </Unit>
-      <Unit filename="/home/zheng/pu_ws/src/hello/src/planar_segmentation.cpp">
-         <Option target="planar_segmentation"/>
       </Unit>
       <Unit filename="/home/zheng/pu_ws/src/hello/src/plc_writetofile.cpp">
          <Option target="plc_writetofile"/>

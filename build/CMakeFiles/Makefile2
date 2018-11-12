@@ -391,13 +391,11 @@ clean: gtest/gtest/CMakeFiles/gtest_main.dir/clean
 
 # Convenience name for "all" pass in the directory.
 hello/all: hello/CMakeFiles/background_substraction.dir/all
-hello/all: hello/CMakeFiles/pcl_cylinder_seg.dir/all
-hello/all: hello/CMakeFiles/planar_segmentation.dir/all
 hello/all: hello/CMakeFiles/pu_test.dir/all
 hello/all: hello/CMakeFiles/voxel_filter.dir/all
 hello/all: hello/CMakeFiles/plc_writetofile.dir/all
-hello/all: hello/CMakeFiles/Image_receive.dir/all
 hello/all: hello/CMakeFiles/image_to_txt.dir/all
+hello/all: hello/CMakeFiles/euclidean_cluster.dir/all
 hello/all: hello/CMakeFiles/spatial_detection.dir/all
 hello/all: hello/CMakeFiles/pcl_view.dir/all
 
@@ -405,12 +403,9 @@ hello/all: hello/CMakeFiles/pcl_view.dir/all
 
 # Convenience name for "clean" pass in the directory.
 hello/clean: hello/CMakeFiles/background_substraction.dir/clean
-hello/clean: hello/CMakeFiles/pcl_cylinder_seg.dir/clean
-hello/clean: hello/CMakeFiles/planar_segmentation.dir/clean
 hello/clean: hello/CMakeFiles/pu_test.dir/clean
 hello/clean: hello/CMakeFiles/voxel_filter.dir/clean
 hello/clean: hello/CMakeFiles/plc_writetofile.dir/clean
-hello/clean: hello/CMakeFiles/Image_receive.dir/clean
 hello/clean: hello/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 hello/clean: hello/CMakeFiles/image_to_txt.dir/clean
 hello/clean: hello/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
@@ -419,6 +414,7 @@ hello/clean: hello/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 hello/clean: hello/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 hello/clean: hello/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 hello/clean: hello/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+hello/clean: hello/CMakeFiles/euclidean_cluster.dir/clean
 hello/clean: hello/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 hello/clean: hello/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 hello/clean: hello/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
@@ -454,7 +450,7 @@ hello/preinstall:
 hello/CMakeFiles/background_substraction.dir/all:
 	$(MAKE) -f hello/CMakeFiles/background_substraction.dir/build.make hello/CMakeFiles/background_substraction.dir/depend
 	$(MAKE) -f hello/CMakeFiles/background_substraction.dir/build.make hello/CMakeFiles/background_substraction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=3,4 "Built target background_substraction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=1,2 "Built target background_substraction"
 .PHONY : hello/CMakeFiles/background_substraction.dir/all
 
 # Include target in all.
@@ -485,87 +481,13 @@ clean: hello/CMakeFiles/background_substraction.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hello/CMakeFiles/pcl_cylinder_seg.dir
-
-# All Build rule for target.
-hello/CMakeFiles/pcl_cylinder_seg.dir/all:
-	$(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/depend
-	$(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=18,19 "Built target pcl_cylinder_seg"
-.PHONY : hello/CMakeFiles/pcl_cylinder_seg.dir/all
-
-# Include target in all.
-all: hello/CMakeFiles/pcl_cylinder_seg.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-hello/CMakeFiles/pcl_cylinder_seg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng/pu_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/pcl_cylinder_seg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng/pu_ws/build/CMakeFiles 0
-.PHONY : hello/CMakeFiles/pcl_cylinder_seg.dir/rule
-
-# Convenience name for target.
-pcl_cylinder_seg: hello/CMakeFiles/pcl_cylinder_seg.dir/rule
-
-.PHONY : pcl_cylinder_seg
-
-# clean rule for target.
-hello/CMakeFiles/pcl_cylinder_seg.dir/clean:
-	$(MAKE) -f hello/CMakeFiles/pcl_cylinder_seg.dir/build.make hello/CMakeFiles/pcl_cylinder_seg.dir/clean
-.PHONY : hello/CMakeFiles/pcl_cylinder_seg.dir/clean
-
-# clean rule for target.
-clean: hello/CMakeFiles/pcl_cylinder_seg.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target hello/CMakeFiles/planar_segmentation.dir
-
-# All Build rule for target.
-hello/CMakeFiles/planar_segmentation.dir/all:
-	$(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/depend
-	$(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=22,23 "Built target planar_segmentation"
-.PHONY : hello/CMakeFiles/planar_segmentation.dir/all
-
-# Include target in all.
-all: hello/CMakeFiles/planar_segmentation.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-hello/CMakeFiles/planar_segmentation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng/pu_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/planar_segmentation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng/pu_ws/build/CMakeFiles 0
-.PHONY : hello/CMakeFiles/planar_segmentation.dir/rule
-
-# Convenience name for target.
-planar_segmentation: hello/CMakeFiles/planar_segmentation.dir/rule
-
-.PHONY : planar_segmentation
-
-# clean rule for target.
-hello/CMakeFiles/planar_segmentation.dir/clean:
-	$(MAKE) -f hello/CMakeFiles/planar_segmentation.dir/build.make hello/CMakeFiles/planar_segmentation.dir/clean
-.PHONY : hello/CMakeFiles/planar_segmentation.dir/clean
-
-# clean rule for target.
-clean: hello/CMakeFiles/planar_segmentation.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target hello/CMakeFiles/pu_test.dir
 
 # All Build rule for target.
 hello/CMakeFiles/pu_test.dir/all:
 	$(MAKE) -f hello/CMakeFiles/pu_test.dir/build.make hello/CMakeFiles/pu_test.dir/depend
 	$(MAKE) -f hello/CMakeFiles/pu_test.dir/build.make hello/CMakeFiles/pu_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=26,27 "Built target pu_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=22,23 "Built target pu_test"
 .PHONY : hello/CMakeFiles/pu_test.dir/all
 
 # Include target in all.
@@ -602,7 +524,7 @@ clean: hello/CMakeFiles/pu_test.dir/clean
 hello/CMakeFiles/voxel_filter.dir/all:
 	$(MAKE) -f hello/CMakeFiles/voxel_filter.dir/build.make hello/CMakeFiles/voxel_filter.dir/depend
 	$(MAKE) -f hello/CMakeFiles/voxel_filter.dir/build.make hello/CMakeFiles/voxel_filter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=46,47 "Built target voxel_filter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=42,43 "Built target voxel_filter"
 .PHONY : hello/CMakeFiles/voxel_filter.dir/all
 
 # Include target in all.
@@ -639,7 +561,7 @@ clean: hello/CMakeFiles/voxel_filter.dir/clean
 hello/CMakeFiles/plc_writetofile.dir/all:
 	$(MAKE) -f hello/CMakeFiles/plc_writetofile.dir/build.make hello/CMakeFiles/plc_writetofile.dir/depend
 	$(MAKE) -f hello/CMakeFiles/plc_writetofile.dir/build.make hello/CMakeFiles/plc_writetofile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=24,25 "Built target plc_writetofile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=20,21 "Built target plc_writetofile"
 .PHONY : hello/CMakeFiles/plc_writetofile.dir/all
 
 # Include target in all.
@@ -666,43 +588,6 @@ hello/CMakeFiles/plc_writetofile.dir/clean:
 
 # clean rule for target.
 clean: hello/CMakeFiles/plc_writetofile.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target hello/CMakeFiles/Image_receive.dir
-
-# All Build rule for target.
-hello/CMakeFiles/Image_receive.dir/all:
-	$(MAKE) -f hello/CMakeFiles/Image_receive.dir/build.make hello/CMakeFiles/Image_receive.dir/depend
-	$(MAKE) -f hello/CMakeFiles/Image_receive.dir/build.make hello/CMakeFiles/Image_receive.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=1,2 "Built target Image_receive"
-.PHONY : hello/CMakeFiles/Image_receive.dir/all
-
-# Include target in all.
-all: hello/CMakeFiles/Image_receive.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-hello/CMakeFiles/Image_receive.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng/pu_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/Image_receive.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng/pu_ws/build/CMakeFiles 0
-.PHONY : hello/CMakeFiles/Image_receive.dir/rule
-
-# Convenience name for target.
-Image_receive: hello/CMakeFiles/Image_receive.dir/rule
-
-.PHONY : Image_receive
-
-# clean rule for target.
-hello/CMakeFiles/Image_receive.dir/clean:
-	$(MAKE) -f hello/CMakeFiles/Image_receive.dir/build.make hello/CMakeFiles/Image_receive.dir/clean
-.PHONY : hello/CMakeFiles/Image_receive.dir/clean
-
-# clean rule for target.
-clean: hello/CMakeFiles/Image_receive.dir/clean
 
 .PHONY : clean
 
@@ -968,6 +853,43 @@ clean: hello/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target hello/CMakeFiles/euclidean_cluster.dir
+
+# All Build rule for target.
+hello/CMakeFiles/euclidean_cluster.dir/all:
+	$(MAKE) -f hello/CMakeFiles/euclidean_cluster.dir/build.make hello/CMakeFiles/euclidean_cluster.dir/depend
+	$(MAKE) -f hello/CMakeFiles/euclidean_cluster.dir/build.make hello/CMakeFiles/euclidean_cluster.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=3,4 "Built target euclidean_cluster"
+.PHONY : hello/CMakeFiles/euclidean_cluster.dir/all
+
+# Include target in all.
+all: hello/CMakeFiles/euclidean_cluster.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+hello/CMakeFiles/euclidean_cluster.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng/pu_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 hello/CMakeFiles/euclidean_cluster.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng/pu_ws/build/CMakeFiles 0
+.PHONY : hello/CMakeFiles/euclidean_cluster.dir/rule
+
+# Convenience name for target.
+euclidean_cluster: hello/CMakeFiles/euclidean_cluster.dir/rule
+
+.PHONY : euclidean_cluster
+
+# clean rule for target.
+hello/CMakeFiles/euclidean_cluster.dir/clean:
+	$(MAKE) -f hello/CMakeFiles/euclidean_cluster.dir/build.make hello/CMakeFiles/euclidean_cluster.dir/clean
+.PHONY : hello/CMakeFiles/euclidean_cluster.dir/clean
+
+# clean rule for target.
+clean: hello/CMakeFiles/euclidean_cluster.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target hello/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -1134,7 +1056,7 @@ clean: hello/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 hello/CMakeFiles/spatial_detection.dir/all:
 	$(MAKE) -f hello/CMakeFiles/spatial_detection.dir/build.make hello/CMakeFiles/spatial_detection.dir/depend
 	$(MAKE) -f hello/CMakeFiles/spatial_detection.dir/build.make hello/CMakeFiles/spatial_detection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=28,29 "Built target spatial_detection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=24,25 "Built target spatial_detection"
 .PHONY : hello/CMakeFiles/spatial_detection.dir/all
 
 # Include target in all.
@@ -1235,7 +1157,7 @@ clean: hello/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 hello/CMakeFiles/pcl_view.dir/all:
 	$(MAKE) -f hello/CMakeFiles/pcl_view.dir/build.make hello/CMakeFiles/pcl_view.dir/depend
 	$(MAKE) -f hello/CMakeFiles/pcl_view.dir/build.make hello/CMakeFiles/pcl_view.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=20,21 "Built target pcl_view"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=18,19 "Built target pcl_view"
 .PHONY : hello/CMakeFiles/pcl_view.dir/all
 
 # Include target in all.
@@ -2133,7 +2055,7 @@ surface_perception/CMakeFiles/surface_perception_segmentation.dir/all: surface_p
 surface_perception/CMakeFiles/surface_perception_segmentation.dir/all: surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/all
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_segmentation.dir/build.make surface_perception/CMakeFiles/surface_perception_segmentation.dir/depend
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_segmentation.dir/build.make surface_perception/CMakeFiles/surface_perception_segmentation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=34,35 "Built target surface_perception_segmentation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=30,31 "Built target surface_perception_segmentation"
 .PHONY : surface_perception/CMakeFiles/surface_perception_segmentation.dir/all
 
 # Include target in all.
@@ -2235,7 +2157,7 @@ surface_perception/CMakeFiles/surface_perception_shape_extraction-test.dir/all: 
 surface_perception/CMakeFiles/surface_perception_shape_extraction-test.dir/all: surface_perception/CMakeFiles/surface_perception_shape_extraction.dir/all
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_shape_extraction-test.dir/build.make surface_perception/CMakeFiles/surface_perception_shape_extraction-test.dir/depend
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_shape_extraction-test.dir/build.make surface_perception/CMakeFiles/surface_perception_shape_extraction-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=38,39 "Built target surface_perception_shape_extraction-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=34,35 "Built target surface_perception_shape_extraction-test"
 .PHONY : surface_perception/CMakeFiles/surface_perception_shape_extraction-test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2482,7 +2404,7 @@ surface_perception/CMakeFiles/surface_perception_surface_finder.dir/all: surface
 surface_perception/CMakeFiles/surface_perception_surface_finder.dir/all: surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/all
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_surface_finder.dir/build.make surface_perception/CMakeFiles/surface_perception_surface_finder.dir/depend
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_surface_finder.dir/build.make surface_perception/CMakeFiles/surface_perception_surface_finder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=40,41 "Built target surface_perception_surface_finder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=36,37 "Built target surface_perception_surface_finder"
 .PHONY : surface_perception/CMakeFiles/surface_perception_surface_finder.dir/all
 
 # Include target in all.
@@ -2574,7 +2496,7 @@ surface_perception/CMakeFiles/surface_perception_visualization.dir/all: surface_
 surface_perception/CMakeFiles/surface_perception_visualization.dir/all: surface_perception/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_visualization.dir/build.make surface_perception/CMakeFiles/surface_perception_visualization.dir/depend
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_visualization.dir/build.make surface_perception/CMakeFiles/surface_perception_visualization.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=44,45 "Built target surface_perception_visualization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=40,41 "Built target surface_perception_visualization"
 .PHONY : surface_perception/CMakeFiles/surface_perception_visualization.dir/all
 
 # Include target in all.
@@ -2857,7 +2779,7 @@ surface_perception/CMakeFiles/surface_perception_shape_extraction.dir/all: surfa
 surface_perception/CMakeFiles/surface_perception_shape_extraction.dir/all: surface_perception/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_shape_extraction.dir/build.make surface_perception/CMakeFiles/surface_perception_shape_extraction.dir/depend
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_shape_extraction.dir/build.make surface_perception/CMakeFiles/surface_perception_shape_extraction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=36,37 "Built target surface_perception_shape_extraction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=32,33 "Built target surface_perception_shape_extraction"
 .PHONY : surface_perception/CMakeFiles/surface_perception_shape_extraction.dir/all
 
 # Include target in all.
@@ -3140,7 +3062,7 @@ surface_perception/CMakeFiles/surface_perception_axes_marker.dir/all: surface_pe
 surface_perception/CMakeFiles/surface_perception_axes_marker.dir/all: surface_perception/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_axes_marker.dir/build.make surface_perception/CMakeFiles/surface_perception_axes_marker.dir/depend
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_axes_marker.dir/build.make surface_perception/CMakeFiles/surface_perception_axes_marker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=30,31 "Built target surface_perception_axes_marker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=26,27 "Built target surface_perception_axes_marker"
 .PHONY : surface_perception/CMakeFiles/surface_perception_axes_marker.dir/all
 
 # Include target in all.
@@ -3329,7 +3251,7 @@ surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/al
 surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/all: surface_perception/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/build.make surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/depend
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/build.make surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=42,43 "Built target surface_perception_surface_history_recorder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=38,39 "Built target surface_perception_surface_history_recorder"
 .PHONY : surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/all
 
 # Include target in all.
@@ -3435,7 +3357,7 @@ surface_perception/CMakeFiles/surface_perception_demo.dir/all: surface_perceptio
 surface_perception/CMakeFiles/surface_perception_demo.dir/all: surface_perception/CMakeFiles/surface_perception_surface_history_recorder.dir/all
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_demo.dir/build.make surface_perception/CMakeFiles/surface_perception_demo.dir/depend
 	$(MAKE) -f surface_perception/CMakeFiles/surface_perception_demo.dir/build.make surface_perception/CMakeFiles/surface_perception_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=32,33 "Built target surface_perception_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zheng/pu_ws/build/CMakeFiles --progress-num=28,29 "Built target surface_perception_demo"
 .PHONY : surface_perception/CMakeFiles/surface_perception_demo.dir/all
 
 # Include target in all.
